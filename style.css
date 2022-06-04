@@ -1,0 +1,329 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.body{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-image: url(/assets/psychedelic-paper-with-abstract-shapes.jpg);
+    
+}
+
+
+                        /* INICIO */
+
+
+.logoBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+/*input*/
+.inventarPalabra{
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 40px;
+}
+
+#inventarPalabraInput::selection{
+    color: #ffa500;
+    background-color: #ffff00;
+}
+
+#inventarPalabraInput{
+    width: 400px;
+    margin: 0 auto;
+    font-family: "Lato";
+    font-size: 1.8em;
+    background-color: transparent;
+    border: none;
+    border-top: 2px solid #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    outline: none;
+    color: #FFFFFF;
+    padding-left: 10px;
+}
+
+#inventarPalabraInput:focus{
+    top: -130px;
+    font-size: 1.2em;
+    transition: all .3s;
+}
+label{
+    display: block;
+    position: relative;
+    left: 10px;
+    top: -70px;
+    font-size: 1.3em;
+    cursor: text;
+    color: #DDDDDD;
+    transition: all .3s;
+}
+label::selection{
+    color: #ffa500;
+    background-color: #ffff00;
+}
+
+/* boton iniciar */
+
+.botonIniciarContainer{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+   
+    height: 50px;
+}
+
+#botonIniciar{
+    width: 200px;
+    background-color: transparent;
+    display: inline-block;
+    padding: 0.5em 3em;
+    border: 0.16em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "roboto" , sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.15s;
+}
+
+#botonIniciar:hover{
+    color: #DDDDDD;
+    border-color: #DDDDDD;
+    cursor:pointer;
+}
+
+#botonIniciar::selection{
+
+    color: rgb(165, 106, 233);
+    background-color: rgb(109, 18, 128);
+}
+
+#botonIniciar:active{
+    color: #BBBBBB;
+    border-color: #BBBBBB;
+}
+
+@media all and (max-width: 30em){
+    .botonIniciar{
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+
+                        /*JUEGO*/
+
+.juegoContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+/*canvas*/
+.canvas{
+    margin-top: 90px;
+}
+
+/*input*/
+.letraContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#letraContainerInput{
+    width: 400px;
+    margin: 0 auto;
+    font-family: "Lato";
+    font-size: 1.8em;
+    background-color: transparent;
+    border: none;
+    border-top: 2px solid #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    outline: none;
+    color: #FFFFFF;
+    padding-left: 10px;
+
+}
+#letraContainerInput::selection{
+    background-color: rgba(127, 226, 70, 0.699);
+    color: rgb(11, 59, 7);
+}
+
+#letraContainerInput::placeholder{
+    color: #FFFFFF;
+    font-size: smaller;
+    text-align: center;
+}
+
+/*boton intentar*/
+.botonIntentarContainer{
+    margin-top: 20px;
+}
+.botonIntentar{
+    width: 200px;
+    background-color: transparent;
+    display: inline-block;
+    padding: 0.5em 3em;
+    border: 0.16em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "roboto" , sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.15s;
+}
+
+#botonIntentar:hover{
+    color: #DDDDDD;
+    border-color: #DDDDDD;
+    cursor: pointer;
+}
+
+#botonIntentar:active{
+    color: #BBBBBB;
+    border-color: #BBBBBB;
+}
+
+#botonIntentar::selection{
+    color: #B98EDF;
+    background-color: rgba(227, 0, 235, 0.671);
+}
+
+
+@media all and (max-width: 30em){
+    .botonIntentar{
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+
+
+/*palabra secreta*/
+.palabraSecretaContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin-top: 30px;
+
+}
+
+.palabraSecreta{
+   display: inline-block;
+   font-size: xx-large;
+   color: #213857;
+}
+
+.palabraSecreta::selection{
+    color: #213857;
+    background-color: #3671beb6;
+}
+
+/*letras erradas*/
+.letrasErradasContainer{
+    margin-top: 30px;
+}
+
+.letrasErradas{
+    font-size: x-large;
+    color: red;
+
+}
+
+.letrasErradas::selection{
+    color: #ff0000;
+    background-color: #c23f1fbb;
+}
+
+.errorEnLetra{
+    margin-top: 10px;
+    color: #DDDDDD;
+}
+
+                        /*JUEGO TERMINADO*/
+.juegoTerminadoContainer{
+    width: 900px;
+    height: 700px;
+    border-radius: 20px;
+    margin-top: 100px;
+    background-color: #B98EDF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*mensaje*/
+#mensajeFinal{
+    margin-top: 20px;
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+}
+.imagen{
+    width: 250px;
+    height: auto;
+}
+
+/*boton final*/
+.buttonFinal{
+    width: 200px;
+    background-color: transparent;
+    display: inline-block;
+    padding: 0.5em 3em;
+    border: 0.16em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "roboto" , sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.15s;
+    margin-top: 30px;
+}
+
+.buttonFinal:hover{
+    color: #DDDDDD;
+    border-color: #DDDDDD;
+    cursor: pointer;
+}
+
+.buttonFinal:active{
+    color: #BBBBBB;
+    border-color: #BBBBBB;
+}
+
+@media all and (max-width: 30em){
+    .buttonFinal{
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+
+                /*NO MOSTRAR*/
+.noMostrar{
+    display: none;
+}
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+</head>
+<body class="body">
+    <!-- Inicio -->
+    <div class="inicioContainer" id="inicioContainer">
+        <div class="logoBox">
+            <img src="./assets/logo-aluraespanhol.svg" alt="">
+        </div>
+        <div class ="inventarPalabra" id="inventarPalabra">
+            <input type="text"
+            id="inventarPalabraInput"
+            name="inventarPalabraInput"
+            >
+        </div> 
+
+        <label class="label" id="label"
+        for="inventarPalabraInput">Elegí una palabra secreta</label>
+
+        <div class="botonIniciarContainer" id="botonIniciarContainer">
+            <button id="botonIniciar" class="botonIniciar">Iniciar Juego</button>
+        </div>
+        
+    </div>
+    
+    <!-- juego -->
+    <div class="juegoContainer noMostrar" id="juegoContainer">
+        <canvas class="canvas" id="canvas" height="400" width="400"></canvas>
+        <div class="letraContainer" id="letraContainer">
+            <input type="text"
+            id="letraContainerInput"
+            name="letraContainerInput"
+            placeholder="Elegí una letra">
+        </div>
+        <p class="errorEnLetra" id="errorEnLetra"></p>
+        <div class="botonIntentarContainer" id="botonIntentarContainer">
+            <button class="botonIntentar" id="botonIntentar">Intentar</button>
+        </div>
+        <div class="palabraSecretaContainer">
+            <p class="palabraSecreta" id="palabraSecreta"></p>
+        </div>
+       <div class="letrasErradasContainer">
+        <p  class="letrasErradas" id="letrasErradas"></p>
+       </div> 
+    </div>
+    <!-- juego terminado -->
+    <div class="juegoTerminadoContainer noMostrar" id="juegoTerminadoContainer">
+        <div class="caritaFelizContainer" id="caritaFelizContainer">
+            <img class="imagen"
+            src="/assets/macaroni-984.png" alt="">
+        </div>
+        <div class="caritaTristeContainer noMostrar" id="caritaTristeContainer">
+            <img class="imagen"
+            src="/assets/stripy-virus-with-face.png" alt="">
+        </div>
+        <h3 id="mensajeFinal" ></h3>
+        <div class="buttonFinalContainer">
+            <button class="buttonFinal" id="buttonFinal">
+                Jugar Otra Vez
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+    <script  type="text/javascript" src="script.js"></script>
+</body>
+</html>
