@@ -13,7 +13,7 @@
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    background-image: url("./assets/psychedelic-paper-with-abstract-shapes.png");
+    background-color: #000
     
 }
 
@@ -268,7 +268,7 @@ label::selection{
     height: 700px;
     border-radius: 20px;
     margin-top: 100px;
-    background-color: #B98EDF;
+    background-color: #233a21;
     display: flex;
     justify-content: center;
     align-items: center;
